@@ -1,0 +1,11 @@
+# System Files
+.DS_Store
+# IDE
+.idea
+*.iml
+# pw
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

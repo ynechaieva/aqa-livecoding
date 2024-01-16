@@ -1,0 +1,51 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["simple-import-sort", "unused-imports"],
+  "rules" : {
+    "no-await-in-loop": "off",
+    "default-param-last": "off",
+    "@typescript-eslint/no-useless-constructor": "off",
+    "class-methods-use-this": "off",
+    "comma-dangle": ["error", "never"],
+    "implicit-arrow-linebreak": "off",
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": 0,
+    "no-shadow": "off",
+    "no-useless-constructor": "off",
+    "no-undef": 0,
+    "no-unused-vars": 0,
+    "no-empty-function": 0,
+    "operator-linebreak": ["error", "after"],
+    "quotes": ["error", "single"],
+    "prefer-destructuring": ["error", {
+      "array": false,
+      "object": true
+    }],
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          ["^[A-z]+", "^[@]+", "^\\."]
+        ]
+      }
+    ],
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "error",
+      { "vars": "all", "args": "after-used" }
+    ]
+  }
+}
