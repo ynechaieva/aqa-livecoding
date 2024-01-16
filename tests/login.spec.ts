@@ -10,7 +10,7 @@ test('User can login', async ({ page }) => {
   await page.goto('https://automationexercise.com/');
 
   // Click on login button
-  await mainPage.login.click();
+  await mainPage.navigation.login.click();
 
   // Fill email and password fields
   await loginPage.email.fill('site24x7.livecode@inbox.testmail.app');

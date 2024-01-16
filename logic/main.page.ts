@@ -1,14 +1,14 @@
 import { Page } from '@playwright/test';
+import { Navigation } from './navigation';
 
 class MainPage {
   page: Page;
 
+  navigation: Navigation;
+
   constructor(page) {
     this.page = page;
-  }
-
-  get login() {
-    return this.page.locator('a[href="/login"]');
+    this.navigation = new Navigation(page);
   }
 
   loggedUser(name: string) {
